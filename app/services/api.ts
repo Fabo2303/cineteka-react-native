@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://cineteka-flask-api.onrender.com",
+    baseURL: "BASE_URL",
     timeout: 30000,
     headers: {
         "Content-Type": "application/json"
