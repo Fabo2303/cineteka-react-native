@@ -9,14 +9,14 @@ import storageService from "@/app/services/storageService";
 
 export default function HomeScreen() {
     const navigation = useNavigation();
-    const [cinemarkMovies, setCinemarkMovies] = useState<Movie[]>([]);
-    const [cineplanetMovies, setCineplanetMovies] = useState<Movie[]>([]);
+    const [mMovies, setmMovies] = useState<Movie[]>([]);
+    const [pMovies, setpMovies] = useState<Movie[]>([]);
 
     useEffect(() => {
         const fetchData = async () => {
             const movies: Movie[] = await storageService.getMovies()
-            setCinemarkMovies(movies.filter(movie => movie.type === "m"));
-            setCineplanetMovies(movies.filter(movie => movie.type === "p"));
+            setmMovies(movies.filter(movie => movie.type === "m"));
+            setpMovies(movies.filter(movie => movie.type === "p"));
         }
 
         navigation.setOptions(
@@ -39,10 +39,10 @@ export default function HomeScreen() {
         <View style={styles.container}>
             <StatusBar hidden={true} translucent={true} />
             <Text style={styles.title}>P 🌐</Text>
-            <MovieList movies={cineplanetMovies}/>
+            <MovieList movies={pMovies}/>
 
             <Text style={styles.title}>M 🎬</Text>
-            <MovieList movies={cinemarkMovies}/>
+            <MovieList movies={mMovies}/>
         </View>
     );
 }
