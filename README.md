@@ -62,14 +62,42 @@ Escanea el código QR con la app Expo Go para ver la aplicación en tu dispositi
 ## Estructura del Proyecto
 
 ```
-app/
-├── components/         # Componentes reutilizables
-├── data/               # Modelos y tipos de datos
-├── screens/            # Pantallas principales
-├── services/           # API y almacenamiento local
-├── assets/             # Fuentes e imágenes
-├── index.tsx           # Punto de entrada de la app
-└── _layout.tsx         # Layout base para navegación
+cineteka_react_native_api/
+├── 📁 .expo/
+│   ├── 📊 devices.json
+│   ├── 📊 packager-info.json
+│   ├── 📝 README.md
+│   └── 📊 settings.json
+├── 📁 app/
+│   ├── 📁 components/
+│   │   ├── ⚛️ CinemaButton.tsx
+│   │   ├── ⚛️ MovieCard.tsx
+│   │   ├── ⚛️ MovieList.tsx
+│   │   ├── ⚛️ ScheduleCard.tsx
+│   │   └── ⚛️ ScheduleList.tsx
+│   ├── 📁 screens/
+│   │   ├── ⚛️ DetailsScreen.tsx
+│   │   └── ⚛️ HomeScreen.tsx
+│   ├── 📁 services/
+│   │   ├── 📘 api.ts
+│   │   ├── 📘 movieService.ts
+│   │   └── 📘 storageService.ts
+│   └── ⚛️ index.tsx
+├── 📁 assets/
+│   ├── 📁 fonts/
+│   │   └── 📄 SpaceMono-Regular.ttf
+│   └── 📁 images/
+│   │   ├── 🖼️ adaptive-icon.png
+│   │   ├── 🖼️ favicon.png
+│   │   ├── 🖼️ icon.png
+│   │   └── 🖼️ splash-icon.png
+├── 📊 app.json
+├── 📊 eas.json
+├── 📘 expo-env.d.ts
+├── 📦 package-lock.json
+├── 📦 package.json
+├── 📝 README.md
+└── 📊 tsconfig.json
 ```
 
 ## Consideraciones
