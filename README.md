@@ -63,11 +63,6 @@ Escanea el código QR con la app Expo Go para ver la aplicación en tu dispositi
 
 ```
 cineteka_react_native_api/
-├── 📁 .expo/
-│   ├── 📊 devices.json
-│   ├── 📊 packager-info.json
-│   ├── 📝 README.md
-│   └── 📊 settings.json
 ├── 📁 app/
 │   ├── 📁 components/
 │   │   ├── ⚛️ CinemaButton.tsx
